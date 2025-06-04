@@ -1,0 +1,10 @@
+name: datadashboard
+title:
+username: kailewis
+account: kailewis
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14878957
+bundleId: 10395520
+url: https://kailewis.shinyapps.io/datadashboard/
+version: 1

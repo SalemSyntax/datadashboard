@@ -1,4 +1,5 @@
 # app.R
+library(rsconnect)
 library(shiny)
 library(ggplot2)
 library(DT)
@@ -101,11 +102,6 @@ server <- function(input, output, session) {
     x <- input$x_col
     y <- input$y_col
     color <- if (input$color_col != "None") input$color_col else NULL
-
-    # if (plot_type == "Boxplot" || plot_type == "Scatter" && is.numeric(df[[x]])) {
-    #   df[[x]] <- factor(df[[x]], nmax = 10)
-    # }
-
 
     if (plot_type == "Histogram") {
       ggplot(df, aes(x = .data[[x]])) +
