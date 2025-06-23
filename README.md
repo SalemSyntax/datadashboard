@@ -36,4 +36,13 @@ Make sure you have R installed (version 4.0 or higher recommended) along with th
 You can install them using:
 
 ```r
-install.packages(c("shiny", "ggplot2", "DT", "dplyr", "readr"))
+install.packages(c("shiny", "ggplot2", "DT", "dplyr", "readr", "rsconnect"))
+
+```
+## Navigate to the application
+
+## Running the application
+
+```
+Rscript -e "shiny::runApp('.')"
+```
